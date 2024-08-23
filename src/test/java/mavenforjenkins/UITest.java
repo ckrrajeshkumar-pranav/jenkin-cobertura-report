@@ -13,10 +13,11 @@ public class UITest
 
 	@Parameters("Browser")
 	@Test
-	public void startBrowser(String browserName)
+	public void startBrowser(@Optional("chrome")String browserName)
 	{
 		System.out.println("Parameter value is "+browserName);
-		WebDriver driver=null;
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 		if(browserName.contains("Chrome"))
 		{
