@@ -24,6 +24,11 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.12.1</version>
 		</dependency>
+                <dependency>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId> <!-- or slf4j-simple, depending on your logging framework -->
+                        <version>1.7.36</version> <!-- Use the version compatible with your setup -->
+                </dependency>
 
 	</dependencies>
 
